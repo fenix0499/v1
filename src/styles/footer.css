@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Space_Mono;
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+.footer {
+  font-family: Space_Mono;
+  height: 80px !important;
+  font-size: 12px;
+  color: #9c9c9c;
+  text-align: center;
+  width: 100%;
+  display: block;
+  display: flex;
+}
+
+.footer-content {
+  width: 300px;
+  height: 30px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  fill: #cfcfcf;
+  transition: 0.5s;
+}
+
+.footer-icons {
+  display: none;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 770px) {
+  .footer {
+    height: 144px !important;
+  }
+
+  .footer-content {
+    height: 120px;
+  }
+
+  .footer-icons {
+    display: flex;
+  }
+}

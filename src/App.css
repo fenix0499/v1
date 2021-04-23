@@ -1,0 +1,17 @@
+body {
+  background-color: #0d0d0d;
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #9c9c9c;
+  border-radius: 5px;
+}

@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts//Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Space_Mono;
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins_SemiBold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+.projects {
+  height: auto;
+  margin-bottom: 5vh;
+}
+
+.projects-content {
+  font-family: Poppins;
+  margin: 0 9%;
+  margin-top: 55px;
+}
+
+.projects-title {
+  color: #cfcfcf;
+  text-align: center;
+  font-size: 23px;
+  font-family: Poppins_SemiBold;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+
+.card-content {
+  background-color: #191919;
+  width: calc((100% - 175px) / 3);
+  height: auto;
+  border-radius: 5px;
+  padding: 0 25px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-last-child:last-child {
+  margin-right: auto;
+  margin-left: 13.5px;
+}
+
+.card-last-child-2:last-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.folder-svg-icon {
+  width: 40px;
+  fill: #bf0413;
+}
+
+.social-icons {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 10px;
+}
+
+.card-title {
+  font-family: Poppins_SemiBold;
+  font-size: 18px;
+  margin-top: 25px;
+  color: #cfcfcf;
+  transition: 0.5s;
+}
+.card-title:hover {
+  color: #bf0413;
+}
+
+.card-description {
+  color: #9c9c9c;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.card-tools {
+  font-family: Space_Mono;
+  color: #9c9c9c;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-tools p {
+  height: auto;
+}
+
+@media screen and (max-width: 980px) {
+  .card-content {
+    width: calc((100% - 125px) / 2);
+  }
+
+  .card-last-child:last-child {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .projects-content {
+    margin: 0 40px;
+  }
+  .card-content {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .card-container {
+    flex-direction: column;
+    width: auto;
+  }
+  .card-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .projects-content {
+    margin: 0 25px;
+  }
+  .card-content {
+    width: 80%;
+  }
+}

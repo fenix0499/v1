@@ -1,0 +1,75 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts//Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Space_Mono;
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins_SemiBold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content {
+  font-family: Poppins;
+  color: #cfcfcf;
+  margin: 0 150px;
+
+  height: 50%;
+  width: auto;
+  text-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.contact-span {
+  font-family: Space_Mono;
+  font-weight: bold;
+  font-size: 15px;
+  color: #bf0413;
+}
+
+.contact-title {
+  font-family: Poppins_SemiBold;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.contact-atraction {
+  font-size: 17.5px;
+  margin: 0 170px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  margin-left: calc(30% - 150px);
+  margin-right: calc(30% - 150px);
+}
+
+@media screen and (max-width: 770px) {
+  .contact {
+    height: 85vh;
+  }
+  .contact-content {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .contact-title {
+    font-size: 35px;
+  }
+  .contact-atraction {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    height: 90vh;
+  }
+}

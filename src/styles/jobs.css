@@ -1,0 +1,229 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts//Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Space_Mono;
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins_SemiBold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+.jobs {
+  height: auto;
+  margin-top: 12vh;
+  margin-bottom: 5vh;
+  padding-top: 100px;
+}
+
+.jobs-content {
+  font-family: Poppins;
+  color: #cfcfcf;
+  margin: 0 21%;
+  margin-top: 55px;
+}
+
+.jobs-title {
+  display: flex;
+  align-items: center;
+}
+
+.jobs-title p {
+  font-size: 28px;
+  font-family: Poppins_SemiBold;
+  margin-right: 18px;
+}
+
+.jobs-title span {
+  font-family: Space_Mono;
+  font-size: 22px;
+  color: #bf0413;
+
+  margin-right: 10px;
+}
+
+.jobs-line {
+  width: calc(70% - 200px);
+  height: 0.5px;
+  background-color: #9c9c9c;
+}
+
+.jobs-container {
+  display: flex;
+  margin-top: 40px;
+}
+
+.jobs-buttons {
+  width: 25%;
+  margin-right: 25px;
+}
+
+.jobs-buttons button {
+  width: 135px;
+  height: 40px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #9c9c9c;
+  font-family: Space_Mono;
+  transition: 0.5s;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.jobs-buttons button:hover {
+  background-color: rgba(191, 4, 19, 0.1);
+  color: #bf0413;
+  transition: 0.5s;
+}
+.button-container {
+  display: flex;
+}
+.button-container div {
+  background-color: #9c9c9c;
+  width: 1px;
+  height: 40px;
+  margin-left: 1px;
+  margin-right: 1px;
+  transition: 0.5s;
+}
+
+.clicked {
+  background-color: rgba(191, 4, 19, 0.1) !important;
+  color: #bf0413 !important;
+}
+
+.clicked-bar {
+  width: 3.5px !important;
+  margin: 0 !important;
+  border-radius: 5px !important;
+  background-color: #bf0413 !important;
+  transition: 0.5s;
+}
+
+.jobs-info {
+  width: auto;
+  padding-top: 5px;
+}
+
+.jobs-asigment {
+  display: flex;
+}
+
+.jobs-asigment p {
+  font-size: 18px !important;
+  margin-right: 8px !important;
+  color: #cfcfcf;
+  margin-bottom: 5px;
+}
+.jobs-asigment span {
+  font-size: 18px !important;
+  color: #bf0413;
+}
+.jobs-date {
+  font-size: 14px !important;
+  font-family: Space_Mono;
+  color: #9c9c9c;
+  margin-bottom: 20px;
+}
+
+.jobs-activites ul div {
+  display: flex;
+  color: #9c9c9c;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.jobs-activites ul li {
+  color: #9c9c9c;
+  font-size: 13px;
+  font-family: Poppins;
+  margin-bottom: 7px;
+  list-style: none;
+}
+
+.jobs-activites ul li::before {
+  content: "";
+  display: inline-block;
+  height: 0.6em;
+  width: 0.6em;
+  background-image: url("../components/icons/pointer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 1em;
+}
+
+.display-list-job {
+  display: none !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .jobs-content {
+    margin: 0 175px !important;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .jobs-content {
+    margin: 0 110px !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .jobs-content {
+    margin: 0 40px !important;
+  }
+  .jobs {
+    margin-bottom: 30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .jobs-container {
+    flex-direction: column;
+  }
+  .jobs-buttons {
+    display: flex;
+    overflow-x: scroll;
+    width: 100% !important;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .button-container div {
+    width: 100% !important;
+    height: 1px;
+    margin: 0;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  .button-container button {
+    padding: 0;
+    text-align: center;
+  }
+  .clicked-bar {
+    height: 3px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .jobs-content {
+    margin: 0 25px !important;
+  }
+  .jobs-title p {
+    font-size: 20px !important;
+  }
+  .jobs-title span {
+    font-size: 15px !important;
+  }
+  .jobs-line {
+    width: calc(25% - 5px);
+  }
+}

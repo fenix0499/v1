@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts//Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Space_Mono;
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins_SemiBold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+.error {
+  height: auto;
+  margin: 0;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.error-content {
+  height: 91vh;
+  margin-top: 100px;
+  width: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.error-title {
+  font-family: Space_Mono;
+  font-size: 25vh;
+  font-weight: bold;
+  color: #bf0413;
+  margin-top: 10vh;
+}
+
+.error-description {
+  font-family: Poppins;
+  font-size: 5vh;
+  color: #cfcfcf;
+  margin-bottom: 10vh;
+  margin-top: -30px;
+}
+
+@media screen and (max-width: 1080px) {
+  .error {
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .error-content {
+    height: 83vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .error {
+    margin: 0;
+  }
+  .error-content {
+    height: 74vh;
+    width: 40vh;
+  }
+  .error-title {
+    font-size: 20vh;
+  }
+  .error-description {
+    font-size: 3vh;
+  }
+}

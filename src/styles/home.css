@@ -1,0 +1,13 @@
+.home {
+  height: auto;
+  margin: 0 10%;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1080px) {
+  .home {
+    margin: 0 !important;
+  }
+}

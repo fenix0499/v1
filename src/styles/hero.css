@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts//Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Space_Mono;
+  src: url("../fonts/Space_Mono/SpaceMono-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins_SemiBold;
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+.hero {
+  display: flex;
+  height: 90vh;
+  margin-top: 100px;
+}
+
+.hero-content {
+  font-family: Poppins;
+  margin: 0 110px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 80%;
+}
+
+.hero-title {
+  font-family: Space_Mono;
+  font-weight: bold;
+  font-size: 16px;
+  color: #bf0413;
+}
+
+.hero-name {
+  font-family: Poppins_SemiBold;
+  font-size: 65px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  color: #cfcfcf;
+}
+
+.hero-subtitle {
+  font-family: Poppins_SemiBold;
+  font-size: 65px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  color: #9c9c9c;
+}
+
+.hero-presentation {
+  width: 510px;
+  margin-top: 15px;
+  line-height: 160%;
+  margin-bottom: 70px;
+  color: #9c9c9c;
+}
+
+.hero-button {
+  border: 2px solid;
+  border-color: #bf0413;
+  border-radius: 4px;
+  padding: 0 25px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+  width: 100px !important;
+}
+
+.hero-button:hover {
+  background-color: rgba(191, 4, 19, 0.1);
+  transition: 0.5s;
+}
+
+.hero-button span {
+  font-family: Space_Mono;
+  color: #bf0413;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1040px) {
+  .hero-content {
+    height: 60%;
+  }
+  .hero {
+    height: 100vh !important;
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .hero {
+    height: 80vh !important;
+  }
+  .hero-name {
+    font-size: 300% !important;
+  }
+  .hero-subtitle {
+    font-size: 300% !important;
+  }
+  .hero-content {
+    margin: auto 40px !important;
+    height: 60% !important;
+  }
+  .hero-presentation {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hero-content {
+    height: 100vh !important;
+  }
+  .hero {
+    margin-bottom: 120px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .hero-name {
+    font-size: 175% !important;
+  }
+  .hero-subtitle {
+    font-size: 175% !important;
+  }
+  .hero-presentation {
+    width: 100% !important;
+  }
+  .hero-content {
+    margin: 0 25px !important;
+    padding-top: 0px !important;
+    height: 100% !important;
+  }
+}
