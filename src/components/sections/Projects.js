@@ -9,27 +9,27 @@ export default function Project() {
   const projects = [
     {
       link: "",
-      github: "",
-      title: "Google Keep Clone",
+      github: "https://github.com/fenix0499/mern-app-front",
+      title: "Frontend Web App",
       description:
-        "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t",
-      tools: "React MongoDB",
+        "Frontend of a personal web application to show courses, blog and administrator view to add, edit and delete users.",
+      tools: "React SCSS Ant-Design",
     },
     {
       link: "",
-      github: "",
-      title: "222Google Keep Clone",
+      github: "https://github.com/fenix0499/mern-app-back",
+      title: "Backend Web App",
       description:
         "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t",
-      tools: "React MongoDB",
+      tools: "Node.js Express MongoDB",
     },
     {
       link: "",
-      github: "",
-      title: "222Google Keep Clone",
+      github: "https://github.com/fenix0499/drawing-app",
+      title: "Drawing App",
       description:
         "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t   luctus. Donec orci nisl , mollis ut sodales ultrices interdum  luctus. Donec orci nisl , mollis ut sodales ultrices interdum ",
-      tools: "React MongoDB",
+      tools: "React-Native Firebase Expo",
     },
     {
       link: "",
@@ -97,17 +97,17 @@ function ProjectCard(props) {
           </a>
         </div>
         <div className="social-icons">
-          <a href={link}>
+          <a href={github}>
             <GitHub className="featured-svg-icon only" />
           </a>
-          <a href={github}>
-            <Link className="featured-svg-icon only" />
+          <a href={link}>
+            <Link className={ link ? 'featured-svg-icon only' : 'display-list-job'} />
           </a>
         </div>
       </div>
       <div className="card-container">
         <div className="card-info">
-          <p className="card-title">{title}</p>
+          <p className="card-title"><a className='projects-title-ref card-title' href={ link ? link : github }>{title}</a></p>
           <p className="card-description">{description}</p>
         </div>
         <div className="card-tools">
