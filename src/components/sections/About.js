@@ -40,7 +40,7 @@ export default function About() {
               <ul>
                 <li>React</li>
                 <li>CSS</li>
-                <li>Ant Design</li>
+                <li>Express.js</li>
               </ul>
             </div>
           </div>

@@ -15,8 +15,7 @@ export default function Jobs() {
     title: "Web Developer",
     company: "SOLEMTI",
     date: "Aug 2020 - Oct 2020",
-    act1:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Uteuismod dolor nec odio convallis, ut commodo dolor eleifend.Nunc efficitur blandit mattis.",
+    act1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Uteuismod dolor nec odio convallis, ut commodo dolor eleifend.Nunc efficitur blandit mattis.",
     act2: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
     act3: "ccccccccccccccccccccccccccccc",
   });
@@ -34,14 +33,13 @@ export default function Jobs() {
       setButton5(false);
       setButton6(false);
       setWorked({
-        title: "Web Developer",
-        company: "SOLEMTI",
-        date: "Aug 2020 - Oct 2020",
-        act1:
-          "When I first started in the company, I worked with the development team in the realization of the 'Ikapital Real Estate' project in the Front and Back End part.",
-        act2:
-          "Worked with technologies such as HTML, JavaScript, CSS3, Bootstrap and CakePHP.",
-        act3: "",
+        title: "Software Developer Engineer",
+        company: "VISE México",
+        date: "May 2021 - Present",
+        act4: "Developing software to help solve company problems and optimize processes to reduce costs and increase worker productivity.",
+        act1: "Development of business web applications, survey of requirements directly with the client, preparation of project report, entity relationship and flow diagrams, database design and integration with the company system, design and layout of the application interface with Figma.",
+        act2: "Development of modern, robust and professional web applications both front and back end, REST API development, presentation of project progress with the client, application deployment on the eflow company's platform.",
+        act3: "Application development is done with technologies such as React, Node.js, Express, SQL Server.",
       });
     }
     if (value === 2) {
@@ -52,12 +50,12 @@ export default function Jobs() {
       setButton5(false);
       setButton6(false);
       setWorked({
-        title: "",
+        title: "Web Developer",
         company: "SOLEMTI",
         date: "Aug 2020 - Oct 2020",
-        act1: "landit mattis.hhhhhhhhhhhhh",
-        act2: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
-        act3: "ccccccccccccccccccccccccccccc",
+        act1: "When I first started in the company, I worked with the development team in the realization of the 'Ikapital Real Estate' project in the Front and Back End part.",
+        act2: "Worked with technologies such as HTML, JavaScript, CSS3, Bootstrap and CakePHP.",
+        act3: "",
       });
     }
     if (value === 3) {
@@ -142,7 +140,7 @@ export default function Jobs() {
                 onClick={() => onClickButton(1)}
                 className={button1 ? "clicked" : ""}
               >
-                Solemti
+                VISE México
               </button>
             </div>
             <div className="button-container">
@@ -150,7 +148,9 @@ export default function Jobs() {
               <button
                 className={button2 ? "clicked" : ""}
                 onClick={() => onClickButton(2)}
-              ></button>
+              >
+                SOLEMTI
+              </button>
             </div>
             <div className="button-container">
               <div className={button3 ? "clicked-bar" : ""} />

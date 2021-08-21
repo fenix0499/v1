@@ -5,11 +5,11 @@ import "../App.css";
 
 export default function Nav() {
   const [burgerClick, setBurgerClick] = useState(false);
-  const bodyStyle = {
-    body: {
-      position: "fixed",
-    },
-  };
+  // const bodyStyle = {
+  //   body: {
+  //     position: "fixed",
+  //   },
+  // };
   var burgerClass = "";
   var transformNav = "";
   var blurNav = "";
@@ -19,7 +19,7 @@ export default function Nav() {
     burgerClass = "toggle";
     transformNav = "nav-active";
     blurNav = "nav-blur-active";
-    scrollNav = !scrollNav;
+    //scrollNav = !scrollNav;
   }
   if (scrollNav) {
     document.body.style.overflow = "hidden";
