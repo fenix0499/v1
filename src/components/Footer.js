@@ -4,7 +4,7 @@ import { ReactComponent as GitHub } from "../components/icons/github.svg";
 import { ReactComponent as Instagram } from "../components/icons/instagram.svg";
 import { ReactComponent as Twitter } from "../components/icons/twitter.svg";
 import { ReactComponent as LinkedIn } from "../components/icons/linkedin.svg";
-import { ReactComponent as CodePen } from "../components/icons/codepen.svg";
+import { ReactComponent as HackerRank } from "../components/icons/HackerRank.svg";
 
 import "../styles/footer.css";
 
@@ -16,17 +16,17 @@ export default function footer() {
           <a href="https://github.com/fenix0499">
             <GitHub className="svg-icon only" />
           </a>
-          <a href="https://www.instagram.com/salomonromero__/">
+          <a href="https://www.instagram.com/salomonromero__/" target="_blank" rel="noreferrer">
             <Instagram className="svg-icon group" />
           </a>
-          <a href="https://twitter.com/fenix0499">
+          <a href="https://twitter.com/fenix0499" target="_blank" rel="noreferrer">
             <Twitter className="svg-icon group" />
           </a>
-          <a href="https://www.linkedin.com/in/sro0499/">
+          <a href="https://www.linkedin.com/in/sro0499/" target="_blank" rel="noreferrer">
             <LinkedIn className="svg-icon only" />
           </a>
-          <a href="#">
-            <CodePen className="svg-icon group" />
+          <a href="https://www.hackerrank.com/fenix150499" target="_blank" rel="noreferrer">
+            <HackerRank className="svg-icon group" />
           </a>
         </div>
         <div className="footer-credits">

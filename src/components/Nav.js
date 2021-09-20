@@ -95,8 +95,10 @@ export default function Nav() {
               </li>
             </ul>
             <a
-              href="https://drive.google.com/file/d/1mltoHECyvaO9Bm1m1Nru5H59dbFC64du/view?usp=sharing"
+              href="https://drive.google.com/file/d/13UhR-sn8UkDE3ePxltGfTIOboq8jWvvN/view?usp=sharing"
               className="nav-button"
+              target="_blank"
+              rel="noreferrer"
             >
               <span>Resume</span>
             </a>

@@ -39,7 +39,7 @@ export default function About() {
               </ul>
               <ul>
                 <li>React</li>
-                <li>CSS</li>
+                <li>SQL</li>
                 <li>Express.js</li>
               </ul>
             </div>

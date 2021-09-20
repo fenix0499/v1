@@ -20,7 +20,7 @@ export default function Project() {
       github: "https://github.com/fenix0499/mern-app-back",
       title: "Backend Web App",
       description:
-        "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t",
+        "Backend of a personal web application to show courses, blog and administrator view to add, edit and delete users.",
       tools: "Node.js Express MongoDB",
     },
     {
@@ -28,24 +28,24 @@ export default function Project() {
       github: "https://github.com/fenix0499/drawing-app",
       title: "Drawing App",
       description:
-        "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t   luctus. Donec orci nisl , mollis ut sodales ultrices interdum  luctus. Donec orci nisl , mollis ut sodales ultrices interdum ",
+        "This is a small mobile drawing application developed for a university project, the application has the feature of consuming cloud services.",
       tools: "React-Native Firebase Expo",
     },
     {
       link: "",
-      github: "",
-      title: "222Google Keep Clone",
+      github: "https://github.com/fenix0499/Job-interviews",
+      title: "Job interviews",
       description:
-        "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t",
-      tools: "React MongoDB",
+        "These are programing challenges that I have successfully solved in different job interviews.",
+      tools: "Javascript",
     },
     {
       link: "",
-      github: "",
-      title: "222Google Keep Clone",
+      github: "https://github.com/fenix0499/freeCodeCamp-Challenges",
+      title: "freeCodeCamp Challenges",
       description:
-        "sodales est luctus. Donec orci nisl , mollis ut sodales ultrices interdum quis t",
-      tools: "React MongoDB",
+        "These are programing challenges solved to complete the freeCodeCamp programming course.",
+      tools: "Javascript",
     },
   ];
 
@@ -97,17 +97,26 @@ function ProjectCard(props) {
           </a>
         </div>
         <div className="social-icons">
-          <a href={github}>
+          <a href={github} target="_blank" rel="noreferrer">
             <GitHub className="featured-svg-icon only" />
           </a>
-          <a href={link}>
-            <Link className={ link ? 'featured-svg-icon only' : 'display-list-job'} />
+          <a href={link} target="_blank" rel="noreferrer">
+            <Link
+              className={link ? "featured-svg-icon only" : "display-list-job"}
+            />
           </a>
         </div>
       </div>
       <div className="card-container">
         <div className="card-info">
-          <p className="card-title"><a className='projects-title-ref card-title' href={ link ? link : github }>{title}</a></p>
+          <p className="card-title">
+            <a
+              className="projects-title-ref card-title"
+              href={link ? link : github}
+            >
+              {title}
+            </a>
+          </p>
           <p className="card-description">{description}</p>
         </div>
         <div className="card-tools">
